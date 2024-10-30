@@ -36,7 +36,7 @@ export default function Header() {
       </div>
       <Navbar.Collapse>
         <Button.Group>
-          <Link to="/home">
+          <Link to="/">
             <Button color={pathname == "/home" ? "info" : "gray"}>
               {" "}
               <HiOutlineHome className="mr-2 h-5 w-5" />

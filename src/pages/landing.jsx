@@ -2,7 +2,9 @@ import Lottie from "lottie-react";
 import DefaultLayout from "../layout/defaultLayout";
 import { motion } from "framer-motion";
 import learn from "../assets/Animation - 1730299701622.json";
+import { useNavigate } from "react-router-dom";
 const Landing = () => {
+  const navigation = useNavigate();
   return (
     <>
       <DefaultLayout>
@@ -10,6 +12,9 @@ const Landing = () => {
           <Lottie animationData={learn} autoplay />
           <div className="flex w-full">
             <motion.div
+              onClick={() => {
+                navigation("/unit-1");
+              }}
               initial={{ y: -2000 }}
               animate={{ y: 0 }}
               whileHover={{ scale: 1.1 }}
@@ -19,6 +24,9 @@ const Landing = () => {
               <h1 className="text-white font-bold text-4xl">Unit 1</h1>
             </motion.div>
             <motion.div
+              onClick={() => {
+                navigation("/unit-1");
+              }}
               initial={{ y: -5000 }}
               animate={{ y: 0 }}
               whileHover={{ scale: 1.1 }}
@@ -28,6 +36,9 @@ const Landing = () => {
               <h1 className="text-white font-bold text-4xl">Unit 2</h1>
             </motion.div>
             <motion.div
+              onClick={() => {
+                navigation("/unit-1");
+              }}
               initial={{ y: -8000 }}
               animate={{ y: 0 }}
               whileHover={{ scale: 1.1 }}
