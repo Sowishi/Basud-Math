@@ -5,7 +5,7 @@ const Unit1 = () => {
   return (
     <DefaultLayout>
       <div className="container mx-auto h-screen">
-        <h1 className="text-3xl font-bold text-center my-10">
+        <h1 className="text-3xl font-bold text-center my-10 uppercase">
           different properties of operations on the set of integers{" "}
         </h1>
         <div className="flex justify-center items-center">

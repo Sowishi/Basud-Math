@@ -37,7 +37,7 @@ const Landing = () => {
             </motion.div>
             <motion.div
               onClick={() => {
-                navigation("/unit-1");
+                navigation("/unit-3");
               }}
               initial={{ y: -8000 }}
               animate={{ y: 0 }}

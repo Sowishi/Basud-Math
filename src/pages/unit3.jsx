@@ -1,13 +1,14 @@
 import AlgebraicProperties from "../components/AlgebraicProperties";
 import IntegerProperties from "../components/integers";
+import PrincipalRoots from "../components/Root";
 import DefaultLayout from "../layout/defaultLayout";
 
-const Unit2 = () => {
+const Unit3 = () => {
   return (
     <DefaultLayout>
       <div className="container mx-auto h-screen">
-        <h1 className="text-3xl font-bold text-center my-10 uppercase">
-          Properties of Algebraic Expressions{" "}
+        <h1 className="text-3xl font-bold text-center my-10">
+          PRINCIPAL ROOTS OF RATIONAL AND IRRATIONAL NUMBERS
         </h1>
         <div className="flex justify-center items-center">
           <iframe
@@ -25,10 +26,10 @@ const Unit2 = () => {
         <h1 className="text-3xl font-bold text-center my-10">
           Important Notes and Takeaways
         </h1>
-        <AlgebraicProperties />
+        <PrincipalRoots />
       </div>
     </DefaultLayout>
   );
 };
 
-export default Unit2;
+export default Unit3;
