@@ -52,7 +52,7 @@ export default function Header() {
               Learn
             </Button>
           </Link>
-          <Link to="/home">
+          <Link to="/about">
             <Button color={pathname == "/home" ? "info" : "gray"}>
               {" "}
               <HiInformationCircle className="mr-2 h-5 w-5" />
