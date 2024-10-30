@@ -49,6 +49,11 @@ const PrincipalRoots = () => {
     window.speechSynthesis.speak(utterance);
   };
 
+  const handleCloseModal = () => {
+    window.speechSynthesis.cancel(); // Stop any ongoing speech synthesis
+    setModalOpen(false);
+  };
+
   return (
     <div
       style={{
@@ -87,7 +92,7 @@ const PrincipalRoots = () => {
       ))}
 
       {/* Modal for displaying the example question and solution */}
-      <Modal show={modalOpen} onClose={() => setModalOpen(false)}>
+      <Modal show={modalOpen} onClose={handleCloseModal}>
         <Modal.Header>Example Question and Solution</Modal.Header>
         <Modal.Body>
           {selectedExample && (
@@ -103,9 +108,6 @@ const PrincipalRoots = () => {
         </Modal.Body>
         <Modal.Footer>
           <div className="flex items-center justify-between w-full">
-            <button className="btn" onClick={() => setModalOpen(false)}>
-              Close
-            </button>
             <Button
               className="btn"
               onClick={() =>
