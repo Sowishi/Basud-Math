@@ -21,7 +21,7 @@ export function TmsFooter() {
         <Footer.Divider />
         <Footer.Copyright
           href="#"
-          by="Tournament Management System™"
+          by="Basud National High School | Learn Math"
           year={2024}
         />
       </div>

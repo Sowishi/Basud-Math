@@ -5,6 +5,7 @@ import logo from "../assets/received_1497173757635461-transformed.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   HiBookOpen,
+  HiHome,
   HiInformationCircle,
   HiLogin,
   HiOutlineCalendar,
@@ -30,7 +31,7 @@ export default function Header() {
           alt="Flowbite React Logo"
         />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white flex items-center justify-start">
-          Learn Math
+          Learn Math | Basud National High School
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2 mr-5">
@@ -39,6 +40,12 @@ export default function Header() {
       <Navbar.Collapse>
         <Button.Group>
           <Link to="/">
+            <Button color={pathname == "/home" ? "info" : "gray"}>
+              <HiHome className="mr-2 h-5 w-5" />
+              Home
+            </Button>
+          </Link>
+          <Link to="/learn">
             <Button color={pathname == "/home" ? "info" : "gray"}>
               {" "}
               <HiBookOpen className="mr-2 h-5 w-5" />
