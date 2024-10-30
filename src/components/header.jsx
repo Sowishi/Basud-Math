@@ -4,6 +4,8 @@ import logo from "../assets/received_1497173757635461-transformed.png";
 
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
+  HiBookOpen,
+  HiInformationCircle,
   HiLogin,
   HiOutlineCalendar,
   HiOutlineHome,
@@ -39,21 +41,14 @@ export default function Header() {
           <Link to="/">
             <Button color={pathname == "/home" ? "info" : "gray"}>
               {" "}
-              <HiOutlineHome className="mr-2 h-5 w-5" />
-              Home
-            </Button>
-          </Link>
-          <Link to="/home">
-            <Button color={pathname == "/home" ? "info" : "gray"}>
-              {" "}
-              <HiOutlineHome className="mr-2 h-5 w-5" />
+              <HiBookOpen className="mr-2 h-5 w-5" />
               Learn
             </Button>
           </Link>
           <Link to="/home">
             <Button color={pathname == "/home" ? "info" : "gray"}>
               {" "}
-              <HiOutlineHome className="mr-2 h-5 w-5" />
+              <HiInformationCircle className="mr-2 h-5 w-5" />
               About
             </Button>
           </Link>

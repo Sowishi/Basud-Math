@@ -25,7 +25,7 @@ const Landing = () => {
             </motion.div>
             <motion.div
               onClick={() => {
-                navigation("/unit-1");
+                navigation("/unit-2");
               }}
               initial={{ y: -5000 }}
               animate={{ y: 0 }}
